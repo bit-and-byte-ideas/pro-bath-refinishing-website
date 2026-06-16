@@ -1,0 +1,22 @@
+# .graphifyignore — controls what /graphify indexes into the knowledge graph.
+# gitignore syntax. When this file exists, graphify uses it INSTEAD of
+# .gitignore for this directory.
+#
+# Graphify already HARD-SKIPS these automatically (no need to list them):
+#   dirs:  node_modules, dist, build, out, coverage, target, .git, .idea,
+#          .cache, .next, .venv, __pycache__, graphify-out, .graphify, ...
+#   files: pnpm-lock.yaml, package-lock.json, yarn.lock, Cargo.lock,
+#          go.sum, poetry.lock, composer.lock, ...
+# So this file only lists what graphify does NOT skip on its own.
+
+# --- project-specific noise graphify won't skip by itself ---
+.agents/            # vendored skill docs (commitlint, frontend-design) — tooling, not the site
+skills-lock.json    # graphify skills lockfile (not covered by the auto lockfile skip)
+
+# --- editor / OS / local files (needed because this file overrides .gitignore) ---
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.local
+*.log
+*.sw?

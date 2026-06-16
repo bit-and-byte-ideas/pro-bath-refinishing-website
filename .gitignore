@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# graphify — share the prebuilt knowledge graph with the team.
+# Commit the three portable artifacts below; ignore everything else in
+# graphify-out/ (local cost tracker, regenerable cache/, machine-specific
+# interpreter+root dotfiles, and manifest.json which still embeds absolute
+# paths in this version and would force teammates into a full rebuild).
+graphify-out/*
+!graphify-out/graph.json
+!graphify-out/graph.html
+!graphify-out/GRAPH_REPORT.md
+.graphify/
