@@ -203,6 +203,10 @@ ul {
   margin-inline: auto;
 }
 
+.section--navy .section-title {
+  color: #fff;
+}
+
 .section--navy .section-sub {
   color: #b9c8ee;
 }

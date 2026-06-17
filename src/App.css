@@ -461,6 +461,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  list-style: none;
+  padding: 0;
 }
 .process__step {
   position: relative;
