@@ -23,6 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
+# Playwright
+playwright-report/
+test-results/
+
 # graphify — share the prebuilt knowledge graph with the team.
 # Commit the three portable artifacts below; ignore everything else in
 # graphify-out/ (local cost tracker, regenerable cache/, machine-specific
